@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ConfigureActivity"
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rss_uri"
+            android:hint="URL FEED"
+
+            android:inputType="textUri" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_send"
+            android:rotation="-45"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:id="@+id/push"
+            android:tint="@android:color/white"
+            android:layout_margin="16dp"
+            android:layout_gravity="right"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_input_delete"
+            android:padding="16dp"
+            android:elevation="4dp"
+            android:id="@+id/reset"
+            android:tint="@android:color/white"
+            android:layout_margin="16dp"
+            android:layout_gravity="left"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
